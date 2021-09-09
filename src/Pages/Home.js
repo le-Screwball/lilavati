@@ -1,18 +1,17 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import DatePickers from '../Components/DateTimePicker';
+// import DatePickers from '../Components/DateTimePicker';
 
 export default function Home() {
   return (
     <React.Fragment>
         <Container fixed>
             <p>
-                Welcome to your web application. Make something beautiful!
+                Here we are trying out various components placing them wherever.
             </p>
             <p>
                 To get started, edit <code>src/App.js</code>, save, and reload this page.
             </p>
-            <DatePickers/>
         </Container>
     </React.Fragment>
   );

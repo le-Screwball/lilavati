@@ -1,14 +1,11 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
+// import DatePickers from '../Components/DateTimePicker';
 
-export default function Gallery() {
+export default function Landing() {
   return (
     <React.Fragment>
-      <Container fixed>
-        <p>
-          This is your gallery page
-        </p>
-      </Container>
+        
     </React.Fragment>
   );
 }
