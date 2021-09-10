@@ -27,11 +27,11 @@ export default function AppFooter() {
           </div>
 
           <div className="flexbox-item footer-link footer-middle-link">
-            <h3>Convenience &amp Facilities</h3>
+            <h3>Convenience &amp; Facilities</h3>
           </div>
 
           <div className="flexbox-item footer-link footer-middle-link">
-            <h3>Media &amp Press Releases</h3>
+            <h3>Media &amp; Press Releases</h3>
           </div>
 
           <div className="flexbox-item footer-link footer-middle-link">
