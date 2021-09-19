@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/lilavati/static/css/main.af840fbd.chunk.css",
-    "main.js": "/lilavati/static/js/main.a15e262f.chunk.js",
-    "main.js.map": "/lilavati/static/js/main.a15e262f.chunk.js.map",
+    "main.css": "/lilavati/static/css/main.915667ca.chunk.css",
+    "main.js": "/lilavati/static/js/main.6aacd982.chunk.js",
+    "main.js.map": "/lilavati/static/js/main.6aacd982.chunk.js.map",
     "runtime-main.js": "/lilavati/static/js/runtime-main.3f56d01a.js",
     "runtime-main.js.map": "/lilavati/static/js/runtime-main.3f56d01a.js.map",
-    "static/js/2.15381a1f.chunk.js": "/lilavati/static/js/2.15381a1f.chunk.js",
-    "static/js/2.15381a1f.chunk.js.map": "/lilavati/static/js/2.15381a1f.chunk.js.map",
+    "static/js/2.15be31bf.chunk.js": "/lilavati/static/js/2.15be31bf.chunk.js",
+    "static/js/2.15be31bf.chunk.js.map": "/lilavati/static/js/2.15be31bf.chunk.js.map",
     "index.html": "/lilavati/index.html",
-    "static/css/main.af840fbd.chunk.css.map": "/lilavati/static/css/main.af840fbd.chunk.css.map",
-    "static/js/2.15381a1f.chunk.js.LICENSE.txt": "/lilavati/static/js/2.15381a1f.chunk.js.LICENSE.txt",
+    "static/css/main.915667ca.chunk.css.map": "/lilavati/static/css/main.915667ca.chunk.css.map",
+    "static/js/2.15be31bf.chunk.js.LICENSE.txt": "/lilavati/static/js/2.15be31bf.chunk.js.LICENSE.txt",
+    "static/media/Ambulance.c5477511.svg": "/lilavati/static/media/Ambulance.c5477511.svg",
+    "static/media/Calender.4897d746.svg": "/lilavati/static/media/Calender.4897d746.svg",
+    "static/media/Finances.07aa2b68.svg": "/lilavati/static/media/Finances.07aa2b68.svg",
+    "static/media/HealthCare.efe51761.svg": "/lilavati/static/media/HealthCare.efe51761.svg",
+    "static/media/HotlinesIcon.6eb9d426.svg": "/lilavati/static/media/HotlinesIcon.6eb9d426.svg",
     "static/media/LHLogo.15b83ec9.svg": "/lilavati/static/media/LHLogo.15b83ec9.svg",
+    "static/media/MenuCol.7ebca03a.svg": "/lilavati/static/media/MenuCol.7ebca03a.svg",
+    "static/media/RightChevron.2b94245d.svg": "/lilavati/static/media/RightChevron.2b94245d.svg",
+    "static/media/TickMark.04aff810.svg": "/lilavati/static/media/TickMark.04aff810.svg",
     "static/media/facebook.8bdeffe6.svg": "/lilavati/static/media/facebook.8bdeffe6.svg",
     "static/media/insta.44802476.svg": "/lilavati/static/media/insta.44802476.svg",
     "static/media/linkedin.7eb7011c.svg": "/lilavati/static/media/linkedin.7eb7011c.svg",
@@ -21,8 +29,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3f56d01a.js",
-    "static/js/2.15381a1f.chunk.js",
-    "static/css/main.af840fbd.chunk.css",
-    "static/js/main.a15e262f.chunk.js"
+    "static/js/2.15be31bf.chunk.js",
+    "static/css/main.915667ca.chunk.css",
+    "static/js/main.6aacd982.chunk.js"
   ]
 }
