@@ -3,9 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
+import { Link, Router } from "react-router-dom";
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import phone from './../Assets/phone.png';
 
 const useStyles = makeStyles({
   root: {
@@ -24,22 +24,28 @@ const useStyles = makeStyles({
   },
 });
 
-export default function HotlineCard() {
+export default function ContinueCard() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Card className={classes.root}>
-      <CardContent>
-        <Typography variant="h5" component="h2">
-          Emergency Helplines
-        </Typography>
+    <a href='../Pages/Home.js'>
+      <Card className={classes.root}>
+        <CardContent>
+          <Link to={process.env.PUBLIC_URL + '/home'}>
 
-      </CardContent>
-      <CardActions>
-        <Button size="small"><img src={phone} className="Phone-logo" alt="phone" />022-26751000</Button>
-        <Button size="small"><img src={phone} className="Phone-logo" alt="phone" />022-26568000</Button>
-      </CardActions>
-    </Card>
+            <Typography variant="h5" component="h2">
+              Continue To Website
+            </Typography>
+
+          </Link>
+
+
+        </CardContent>
+        <CardActions>
+          {/* <Button size="small">Learn More</Button> */}
+        </CardActions>
+      </Card>
+    </a>
   );
 }

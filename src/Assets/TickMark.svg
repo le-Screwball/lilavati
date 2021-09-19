@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="202" height="202" viewBox="0 0 202 202">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.206" cy="0.123" r="3.054" gradientTransform="matrix(0.164, 0.986, -0.408, 0.068, 0.222, -0.089)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#06b7b7"/>
+      <stop offset="1" stop-color="#025373"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_605" data-name="Group 605" transform="translate(-113 -237)">
+    <circle id="Ellipse_29" data-name="Ellipse 29" cx="101" cy="101" r="101" transform="translate(113 237)" fill="url(#radial-gradient)"/>
+    <g id="Group_604" data-name="Group 604" transform="translate(-5.5 -17.228)">
+      <rect id="Rectangle_46" data-name="Rectangle 46" width="103" height="13" rx="4" transform="translate(191.216 387.048) rotate(-45)" fill="#fff"/>
+      <rect id="Rectangle_47" data-name="Rectangle 47" width="49" height="13" rx="5" transform="translate(200.408 396.24) rotate(-135)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

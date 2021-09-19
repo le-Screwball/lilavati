@@ -2,7 +2,7 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/Toolbar';
-import {Link, Router} from "react-router-dom";
+import { Link, Router } from "react-router-dom";
 import insta from '../Assets/insta.svg';
 import youtube from '../Assets/yt.svg';
 import facebook from '../Assets/facebook.svg';
@@ -13,10 +13,10 @@ import twitter from '../Assets/twitter.svg';
 export default function AppFooter() {
   return (
     <div className="root">
-        
+
       <footer className="App-footer">
         <div className="flexbox-container">
-          
+
           <div className="flexbox-item footer-header">
             <h2>Lilavati Hospitals</h2>
             <h5>More Than Healthcare, Human Care</h5>
@@ -55,7 +55,7 @@ export default function AppFooter() {
           </div>
 
           <div className="flexbox-container social-media">
-            
+
             <div className="flexbox-item social-media-icon instagram-container">
               <img src={insta} className="insta-logo" alt="insta" />
             </div>

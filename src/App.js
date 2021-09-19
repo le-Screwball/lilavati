@@ -15,6 +15,7 @@ import facebook from './Assets/facebook.svg';
 import linkedin from './Assets/linkedin.svg';
 import twitter from './Assets/twitter.svg';
 import AppFooter from './Components/Footer.js';
+import HotlinesFAB from './Components/HotlinesFAB';
 
 
 function App() {
@@ -22,26 +23,28 @@ function App() {
     <div className="App">
       {/* Header (Navigation Bar) */}
       <header className="App-header">
-      <LandingAppBar/>
+        {/* <LandingAppBar/> */}
+        <GlobalAppBar />
       </header>
-      
-      {/* Router - Pages */}
-          <Switch>
-            <Route path={process.env.PUBLIC_URL + '/'} exact > <Home/> </Route>
-            <Route path={process.env.PUBLIC_URL + '/landing'}  > <Landing/> </Route>
-            <Route path={process.env.PUBLIC_URL + '/home'} > <Home/> </Route>
-            <Route path={process.env.PUBLIC_URL + '/canda'} > <CandA/> </Route>
-            <Route path={process.env.PUBLIC_URL + '/careers'} > <Careers/> </Route>
-            <Route path={process.env.PUBLIC_URL + '/positioninfo'}  > <PositionInfo/> </Route>
-            <Route path={process.env.PUBLIC_URL + '/applicationform'}  > <ApplicationForm/> </Route>
-            <Route path={process.env.PUBLIC_URL + '/success'}  > <Success/> </Route>
-          </Switch>
 
-      
-      <AppFooter/>
+      {/* Router - Pages */}
+      <Switch>
+        <Route path={process.env.PUBLIC_URL + '/'} exact > <Landing /> </Route>
+        <Route path={process.env.PUBLIC_URL + '/landing'}  > <Landing /> </Route>
+        <Route path={process.env.PUBLIC_URL + '/home'} > <Home /> </Route>
+        <Route path={process.env.PUBLIC_URL + '/canda'} > <CandA /> </Route>
+        <Route path={process.env.PUBLIC_URL + '/careers'} > <Careers /> </Route>
+        <Route path={process.env.PUBLIC_URL + '/positioninfo'}  > <PositionInfo /> </Route>
+        <Route path={process.env.PUBLIC_URL + '/applicationform'}  > <ApplicationForm /> </Route>
+        <Route path={process.env.PUBLIC_URL + '/success'}  > <Success /> </Route>
+      </Switch>
+
+      <HotlinesFAB />
+
+      <AppFooter />
 
     </div>
   );
-  }
+}
 
 export default App;

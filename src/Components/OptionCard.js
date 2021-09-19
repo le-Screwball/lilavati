@@ -5,6 +5,12 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Ambulance from '../Assets/Ambulance.svg';
+import Calender from '../Assets/Calender.svg';
+import HealthCare from '../Assets/HealthCare.svg';
+import Finances from '../Assets/Finances.svg';
+import OptionCardList from './OptionCardList';
+import PriorityLinkButton from './PriorityLinkButton';
 
 const useStyles = makeStyles({
   root: {
@@ -23,7 +29,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function CovidResCard() {
+export default function OptionCard() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
@@ -32,9 +38,33 @@ export default function CovidResCard() {
       <Card className={classes.root}>
         <CardContent>
 
-          <Typography variant="h5" component="h2">
-            Covid 19 Resources
-          </Typography>
+          <div className="flexbox-container">
+
+            <div className="flexbox-item button">
+
+              <PriorityLinkButton />
+
+            </div>
+
+            <div className="flexbox-item button">
+
+              <PriorityLinkButton />
+
+            </div>
+
+            <div className="flexbox-item button">
+
+              <PriorityLinkButton />
+
+            </div>
+
+            <div className="flexbox-item button">
+
+              <PriorityLinkButton />
+
+            </div>
+
+          </div>
 
         </CardContent>
         <CardActions>
