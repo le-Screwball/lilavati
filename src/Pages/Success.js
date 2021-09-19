@@ -1,6 +1,4 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
-// import DatePickers from '../Components/DateTimePicker';
 import Tick from '../Assets/TickMark.svg';
 import { Typography } from '@material-ui/core';
 import HomeButton from '../Components/HomeButton';
@@ -39,8 +37,6 @@ export default function Success() {
           </Link>
 
         </div>
-
-
 
       </div>
     </React.Fragment>

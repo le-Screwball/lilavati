@@ -1,8 +1,4 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/Toolbar';
-import { Link, Router } from "react-router-dom";
 import insta from '../Assets/insta.svg';
 import youtube from '../Assets/yt.svg';
 import facebook from '../Assets/facebook.svg';

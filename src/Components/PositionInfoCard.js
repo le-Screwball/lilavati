@@ -3,14 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Ambulance from '../Assets/Ambulance.svg';
-import Calender from '../Assets/Calender.svg';
-import HealthCare from '../Assets/HealthCare.svg';
-import Finances from '../Assets/Finances.svg';
-import OptionCardList from './OptionCardList';
-import PriorityLinkButton from './PriorityLinkButton';
 import ApplyButton from './ApplyButton';
 import { Link, Router } from "react-router-dom";
 
@@ -88,9 +81,6 @@ export default function PositionInfoCard() {
                 </div>
 
             </CardContent>
-            <CardActions>
-                {/* <Button size="small">Learn More</Button> */}
-            </CardActions>
         </Card>
     );
 }

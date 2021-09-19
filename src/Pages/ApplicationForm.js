@@ -1,9 +1,7 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 import FormCard from '../Components/FormCard';
 import NextButton from '../Components/NextSectionButton';
 import { Typography } from '@material-ui/core';
-// import DatePickers from '../Components/DateTimePicker';
 import { Link, Router } from "react-router-dom";
 
 export default function ApplicationForm() {

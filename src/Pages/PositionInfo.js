@@ -16,10 +16,6 @@ export default function PositionInfo() {
           <PositionInfoCard />
         </div>
 
-
-
-
-
       </div>
     </React.Fragment>
   );

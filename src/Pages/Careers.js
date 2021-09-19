@@ -1,10 +1,7 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 import SearchBar from '../Components/SearchBar';
-import DeptFilter from '../Components/DeptFilter';
 import DeptBar from '../Components/DeptBar';
 import ViewAllButton from '../Components/ViewAllButton';
-// import DatePickers from '../Components/DateTimePicker';
 
 export default function Careers() {
   return (

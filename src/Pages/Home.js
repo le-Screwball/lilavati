@@ -1,12 +1,9 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 import OptionCard from '../Components/OptionCard';
 import BannersCarousel from '../Components/Banners';
-import OptionCardList from '../Components/OptionCardList';
 import UpdatesButton from '../Components/UpdatesButton';
 import TestimonialCard from '../Components/TestimonialCard';
 import SocInitCard from '../Components/SocInitCard';
-// import DatePickers from '../Components/DateTimePicker';
 
 export default function Home() {
   return (

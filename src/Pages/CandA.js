@@ -1,7 +1,5 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 import CandAButton from '../Components/CandAButton';
-// import DatePickers from '../Components/DateTimePicker';
 import { Link, Router } from "react-router-dom";
 
 export default function CandA() {
