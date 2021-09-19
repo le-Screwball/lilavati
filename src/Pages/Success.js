@@ -18,7 +18,7 @@ export default function Success() {
         <div className="flexbox-item Page-Header">
 
           <Typography variant="h2" component="h2">Thank You</Typography>
-          <Typography variant="h4" component="h4">For Choosign Lilavati</Typography>
+          <Typography variant="h4" component="h4">For Choosing Lilavati</Typography>
 
         </div>
 
