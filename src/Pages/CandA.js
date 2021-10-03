@@ -1,6 +1,12 @@
 import React from 'react';
 import CandAButton from '../Components/CandAButton';
 import { Link, Router } from "react-router-dom";
+import CMEButton from '../Components/CMEButton';
+import DNBButton from '../Components/DNBButton';
+import LHMTButton from '../Components/LHMTButton';
+import NursingButton from '../Components/NursingButton';
+import ResearchButton from '../Components/ResearchButton';
+import Grid from '@material-ui/core/Grid';
 
 export default function CandA() {
   return (
@@ -8,47 +14,79 @@ export default function CandA() {
 
       <div className="flexbox-container">
 
-        <div className="flexbox-item Page-Header">
+        <Grid container spacing={3} justifyContent="center">
 
-          <h2>Career &amp; Academics</h2>
+          <Grid item xs={10}>
 
-        </div>
+            <div className="flexbox-item Page-Header">
 
-        <div className="flexbox-item CandA-Button">
+              <h2>Career &amp; Academics</h2>
 
-          <Link to={process.env.PUBLIC_URL + '/careers'}><CandAButton /></Link>
+            </div>
 
-        </div>
+          </Grid>
 
-        <div className="flexbox-item CandA-Button">
+          <Grid item xs={10}>
 
-          <CandAButton />
+            <div className="flexbox-item CandA-Button">
 
-        </div>
+              <Link to={process.env.PUBLIC_URL + '/careers'}><CandAButton /></Link>
 
-        <div className="flexbox-item CandA-Button">
+            </div>
 
-          <CandAButton />
+          </Grid>
 
-        </div>
+          <Grid item xs={10}>
 
-        <div className="flexbox-item CandA-Button">
+            <div className="flexbox-item CandA-Button">
 
-          <CandAButton />
+              <CMEButton />
 
-        </div>
+            </div>
 
-        <div className="flexbox-item CandA-Button">
+          </Grid>
 
-          <CandAButton />
+          <Grid item xs={10}>
 
-        </div>
+            <div className="flexbox-item CandA-Button">
 
-        <div className="flexbox-item CandA-Button">
+              <DNBButton />
 
-          <CandAButton />
+            </div>
 
-        </div>
+          </Grid>
+
+          <Grid item xs={10}>
+
+            <div className="flexbox-item CandA-Button">
+
+              <LHMTButton />
+
+            </div>
+
+          </Grid>
+
+          <Grid item xs={10}>
+
+            <div className="flexbox-item CandA-Button">
+
+              <NursingButton />
+
+            </div>
+
+          </Grid>
+
+          <Grid item xs={10}>
+
+            <div className="flexbox-item CandA-Button">
+
+              <ResearchButton />
+
+            </div>
+
+          </Grid>
+
+        </Grid>
 
       </div>
 

@@ -3,6 +3,10 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import MobileStepper from '@material-ui/core/MobileStepper';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
+import banner1 from '../Assets/banners.jpg';
+import banner2 from '../Assets/banners1.jpg';
+import banner3 from '../Assets/banners2.jpg';
+import banner4 from '../Assets/banners3.jpg';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -10,27 +14,22 @@ const tutorialSteps = [
   {
 
     imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+      banner1,
   },
   {
 
     imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+      banner2,
   },
   {
 
     imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
+      banner3,
   },
   {
 
     imgPath:
-      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60',
-  },
-  {
-
-    imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+      banner4,
   },
 ];
 

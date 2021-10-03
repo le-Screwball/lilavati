@@ -1,89 +1,145 @@
 import React from 'react';
-import FormCard from '../Components/FormCard';
 import NextButton from '../Components/NextSectionButton';
 import { Typography } from '@material-ui/core';
 import { Link, Router } from "react-router-dom";
+import FormCardOne from '../Components/FormCard1';
+import FormCardTwo from '../Components/FormCard2';
+import FormCardThree from '../Components/FormCard3';
+import FormCardFour from '../Components/FormCard4';
+import Grid from '@material-ui/core/Grid';
 
 export default function ApplicationForm() {
   return (
     <React.Fragment>
       <div className="flexbox-container">
 
-        <div className="flexbox-item Section-Header">
+        <Grid container spacing={3} justifyContent="center">
 
-          <Typography variant="h2" component="h2">Step 1</Typography>
+          <Grid item xs={10}>
 
-        </div>
+            <div className="flexbox-item Section-Header">
 
-        <div className="flexbox-item Form-Card">
+              <Typography variant="h2" component="h2">Step 1</Typography>
 
-          <FormCard />
+            </div>
 
-        </div>
+          </Grid>
 
-        <div className="flexbox-item Next Button">
+          <Grid item xs={10}>
 
-          <NextButton />
+            <div className="flexbox-item Form-Card">
 
-        </div>
+              <FormCardOne />
 
-        <div className="flexbox-item Section-Header">
+            </div>
 
-          <Typography variant="h2" component="h2">Step 2</Typography>
+          </Grid>
 
-        </div>
+          <Grid item xs={10}>
 
-        <div className="flexbox-item Form-Card">
+            <div className="flexbox-item Next Button">
 
-          <FormCard />
+              <NextButton />
 
-        </div>
+            </div>
 
-        <div className="flexbox-item Next Button">
+          </Grid>
 
-          <NextButton />
+          <Grid item xs={10}>
 
-        </div>
+            <div className="flexbox-item Section-Header">
 
-        <div className="flexbox-item Section-Header">
+              <Typography variant="h2" component="h2">Step 2</Typography>
 
-          <Typography variant="h2" component="h2">Step 3</Typography>
+            </div>
 
-        </div>
+          </Grid>
 
-        <div className="flexbox-item Form-Card">
+          <Grid item xs={10}>
 
-          <FormCard />
+            <div className="flexbox-item Form-Card">
 
-        </div>
+              <FormCardTwo />
 
-        <div className="flexbox-item Next Button">
+            </div>
 
-          <NextButton />
+          </Grid>
 
-        </div>
+          <Grid item xs={10}>
 
-        <div className="flexbox-item Section-Header">
+            <div className="flexbox-item Next Button">
 
-          <Typography variant="h2" component="h2">Step 4</Typography>
+              <NextButton />
 
-        </div>
+            </div>
 
-        <div className="flexbox-item Form-Card">
+          </Grid>
 
-          <FormCard />
+          <Grid item xs={10}>
 
-        </div>
+            <div className="flexbox-item Section-Header">
 
-        <div className="flexbox-item Next Button">
+              <Typography variant="h2" component="h2">Step 3</Typography>
 
-          <Link to={process.env.PUBLIC_URL + '/success'}>
+            </div>
 
-            <NextButton />
+          </Grid>
 
-          </Link>
+          <Grid item xs={10}>
 
-        </div>
+            <div className="flexbox-item Form-Card">
+
+              <FormCardThree />
+
+            </div>
+
+          </Grid>
+
+          <Grid item xs={10}>
+
+            <div className="flexbox-item Next Button">
+
+              <NextButton />
+
+            </div>
+
+          </Grid>
+
+          <Grid item xs={10}>
+
+            <div className="flexbox-item Section-Header">
+
+              <Typography variant="h2" component="h2">Step 4</Typography>
+
+            </div>
+
+          </Grid>
+
+          <Grid item xs={10}>
+
+            <div className="flexbox-item Form-Card">
+
+              <FormCardFour />
+
+            </div>
+
+          </Grid>
+
+          <Grid item xs={10}>
+
+            <div className="flexbox-item Next Button">
+
+              <Link to={process.env.PUBLIC_URL + '/success'}>
+
+                <NextButton />
+
+              </Link>
+
+            </div>
+
+          </Grid>
+
+        </Grid>
 
       </div>
     </React.Fragment>

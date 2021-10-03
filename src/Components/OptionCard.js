@@ -2,7 +2,10 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import PriorityLinkButton from './PriorityLinkButton';
+import PrioLinkAmbulance from './PrioLinkAmbulance';
+import PrioLinkAppointments from './PrioLinkAppointments';
+import PrioLinkHealthCare from './PrioLinkHealthCare';
+import PrioLinkFinances from './PrioLinkFinances';
 
 const useStyles = makeStyles({
   root: {
@@ -34,25 +37,25 @@ export default function OptionCard() {
 
             <div className="flexbox-item button">
 
-              <PriorityLinkButton />
+              <PrioLinkAmbulance />
 
             </div>
 
             <div className="flexbox-item button">
 
-              <PriorityLinkButton />
+              <PrioLinkAppointments />
 
             </div>
 
             <div className="flexbox-item button">
 
-              <PriorityLinkButton />
+              <PrioLinkHealthCare />
 
             </div>
 
             <div className="flexbox-item button">
 
-              <PriorityLinkButton />
+              <PrioLinkFinances />
 
             </div>
 

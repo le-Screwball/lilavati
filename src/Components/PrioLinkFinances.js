@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import Calender from '../Assets/Calender.svg';
+import Finances from '../Assets/Finances.svg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -12,15 +12,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function PriorityLinkButton() {
+export default function PrioLinkFinances() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Button variant="contained">
 
-        <img src={Calender} className="Calender-logo Priority-Logos" alt="calender" />
-        Ambulance
+        <img src={Finances} className="Finances-logo Priority-Logos" alt="finances" />
+        Finances
 
       </Button>
     </div>

@@ -16,6 +16,7 @@ import linkedin from './Assets/linkedin.svg';
 import twitter from './Assets/twitter.svg';
 import AppFooter from './Components/Footer.js';
 import HotlinesFAB from './Components/HotlinesFAB';
+import HotlinesPopup from './Components/HotlinesPopup';
 
 
 function App() {
@@ -39,7 +40,7 @@ function App() {
         <Route path={process.env.PUBLIC_URL + '/success'}  > <Success /> </Route>
       </Switch>
 
-      <HotlinesFAB />
+      <HotlinesPopup />
 
       <AppFooter />
 

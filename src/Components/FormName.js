@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function FormFields() {
+export default function FormName() {
     const classes = useStyles();
 
     return (

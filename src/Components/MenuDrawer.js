@@ -8,6 +8,7 @@ import ListItem from '@material-ui/core/ListItem';
 import menu from './../Assets/menu.svg';
 import menucol from './../Assets/MenuCol.svg';
 import { Link, Router } from "react-router-dom";
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
   list: {
@@ -44,16 +45,45 @@ export default function MenuDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
-        <ListItem><img src={menucol} className="MenuCol-logo" alt="menucol" /></ListItem>
-        <ListItem>Home</ListItem>
-        <ListItem>About us</ListItem>
-        <ListItem>Services</ListItem>
-        <ListItem>Patients</ListItem>
-        <ListItem>Visitors</ListItem>
-        <Link to={process.env.PUBLIC_URL + '/CandA'}><ListItem>Careers &amp; Academics</ListItem></Link>
-        <ListItem>Contact Us</ListItem>
-      </List>
+
+      <Grid container spacing={3} justifyContent="center" >
+
+        <Grid item xs={10}>
+          <img src={menucol} className="MenuCol-logo" alt="menucol" />
+        </Grid>
+
+        <Grid item xs={10}>
+          Home
+        </Grid>
+
+        <Grid item xs={10}>
+          About us
+        </Grid>
+
+        <Grid item xs={10}>
+          Services
+        </Grid>
+
+        <Grid item xs={10}>
+          Patients
+        </Grid>
+
+        <Grid item xs={10}>
+          Visitors
+        </Grid>
+
+        <Link to={process.env.PUBLIC_URL + '/CandA'}>
+          <Grid item xs={10}>
+            Careers &amp; Academics
+          </Grid>
+        </Link>
+
+        <Grid item xs={10}>
+          Contact Us
+        </Grid>
+
+      </Grid>
+
     </div>
   );
 

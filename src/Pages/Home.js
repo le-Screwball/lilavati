@@ -1,9 +1,22 @@
 import React from 'react';
 import OptionCard from '../Components/OptionCard';
 import BannersCarousel from '../Components/Banners';
-import UpdatesButton from '../Components/UpdatesButton';
-import TestimonialCard from '../Components/TestimonialCard';
-import SocInitCard from '../Components/SocInitCard';
+import UpdatesButtonOne from '../Components/UpdatesButton1';
+import SocInitCardOne from '../Components/SocInitCardOne';
+import SocInitCardTwo from '../Components/SocInitCardTwo';
+import SocInitCardThree from '../Components/SocInitCardThree';
+import SocInitCardFour from '../Components/SocInitCardFour';
+import UpdatesButtonTwo from '../Components/UpdatesButton2';
+import UpdatesButtonThree from '../Components/UpdatesButton3';
+import UpdatesButtonFour from '../Components/UpdatesButton4';
+import UpdatesButtonFive from '../Components/UpdatesButton5';
+import UpdatesButtonSix from '../Components/UpdatesButton6';
+import TestimonialCardOne from '../Components/TestimonialCardOne';
+import TestimonialCardTwo from '../Components/TestimonialCardTwo';
+import TestimonialCardThree from '../Components/TestimonialCardThree';
+import TestimonialCardFour from '../Components/TestimonialCardFour';
+import Grid from '@material-ui/core/Grid';
+
 
 export default function Home() {
   return (
@@ -11,120 +24,209 @@ export default function Home() {
 
       <div className="flexbox-container">
 
-        <div className="flexbox-item Page-Header">
+        <Grid container spacing={3} justifyContent="center" >
 
-          <h2>Priority Links</h2>
 
-        </div>
+          <Grid item xs={10}>
 
-        <div className="flexbox-item Option-Card">
+            <div className="flexbox-item Page-Header">
 
-          <OptionCard />
+              <h2>Priority Links</h2>
 
-        </div>
+            </div>
 
-        <div className="flexbox-item">
+          </Grid>
 
-          <BannersCarousel />
+          <Grid item xs={10}>
 
-        </div>
+            <div className="flexbox-item Option-Card">
 
-        <div className="flexbox-item Page-Header">
+              <OptionCard />
 
-          <h2>Updates</h2>
+            </div>
 
-        </div>
+          </Grid>
 
-        <div className="flexbox-item Updates-Button">
+          <Grid item xs={10}>
 
-          <UpdatesButton />
+            <div className="flexbox-item">
 
-        </div>
+              <BannersCarousel />
 
-        <div className="flexbox-item Updates-Button">
+            </div>
 
-          <UpdatesButton />
+          </Grid>
 
-        </div>
+          <Grid item xs={10}>
 
-        <div className="flexbox-item Updates-Button">
+            <div className="flexbox-item Page-Header">
 
-          <UpdatesButton />
+              <h2>Updates</h2>
 
-        </div>
+            </div>
 
-        <div className="flexbox-item Updates-Button">
+          </Grid>
 
-          <UpdatesButton />
+          <Grid item xs={10}>
 
-        </div>
+            <div className="flexbox-item Updates-Button">
 
-        <div className="flexbox-item Updates-Button">
+              <UpdatesButtonOne />
 
-          <UpdatesButton />
+            </div>
 
-        </div>
+          </Grid>
 
-        <div className="flexbox-item Updates-Button">
+          <Grid item xs={10}>
 
-          <UpdatesButton />
+            <div className="flexbox-item Updates-Button">
 
-        </div>
+              <UpdatesButtonTwo />
 
-        <div className="flexbox-item Page-Header">
+            </div>
 
-          <h2>Testimonials</h2>
+          </Grid>
 
-        </div>
+          <Grid item xs={10}>
 
-        <div className="flexbox-item Testimonial-Card">
+            <div className="flexbox-item Updates-Button">
 
-          <TestimonialCard />
+              <UpdatesButtonThree />
 
-        </div>
+            </div>
 
-        <div className="flexbox-item Testimonial-Card">
+          </Grid>
 
-          <TestimonialCard />
+          <Grid item xs={10}>
 
-        </div>
+            <div className="flexbox-item Updates-Button">
 
-        <div className="flexbox-item Testimonial-Card">
+              <UpdatesButtonFour />
 
-          <TestimonialCard />
+            </div>
+          </Grid>
 
-        </div>
+          <Grid item xs={10}>
 
-        <div className="flexbox-item Page-Header">
+            <div className="flexbox-item Updates-Button">
 
-          <h2>Social Initiatives</h2>
+              <UpdatesButtonFive />
 
-        </div>
+            </div>
 
-        <div className="flexbox-item SocInit-Card">
+          </Grid>
 
-          <SocInitCard />
+          <Grid item xs={10}>
 
-        </div>
+            <div className="flexbox-item Updates-Button">
 
-        <div className="flexbox-item SocInit-Card">
+              <UpdatesButtonSix />
 
-          <SocInitCard />
+            </div>
 
-        </div>
+          </Grid>
 
-        <div className="flexbox-item SocInit-Card">
+          <Grid item xs={10}>
 
-          <SocInitCard />
+            <div className="flexbox-item Page-Header">
 
-        </div>
+              <h2>Testimonials</h2>
 
-        <div className="flexbox-item SocInit-Card">
+            </div>
 
-          <SocInitCard />
+          </Grid>
 
-        </div>
+          <Grid item xs={10}>
 
+            <div className="flexbox-item Testimonial-Card">
+
+              <TestimonialCardOne />
+
+            </div>
+
+          </Grid>
+
+          <Grid item xs={10}>
+
+            <div className="flexbox-item Testimonial-Card">
+
+              <TestimonialCardTwo />
+
+            </div>
+
+          </Grid>
+
+          <Grid item xs={10}>
+
+            <div className="flexbox-item Testimonial-Card">
+
+              <TestimonialCardThree />
+
+            </div>
+
+          </Grid>
+
+          <Grid item xs={10}>
+
+            <div className="flexbox-item Testimonial-Card">
+
+              <TestimonialCardFour />
+
+            </div>
+
+          </Grid>
+
+          <Grid item xs={10}>
+
+            <div className="flexbox-item Page-Header">
+
+              <h2>Social Initiatives</h2>
+
+            </div>
+
+          </Grid>
+
+          <Grid item xs={10}>
+
+            <div className="flexbox-item SocInit-Card">
+
+              <SocInitCardOne />
+
+            </div>
+
+          </Grid>
+
+          <Grid item xs={10}>
+
+            <div className="flexbox-item SocInit-Card">
+
+              <SocInitCardTwo />
+
+            </div>
+
+          </Grid>
+
+          <Grid item xs={10}>
+
+            <div className="flexbox-item SocInit-Card">
+
+              <SocInitCardThree />
+
+            </div>
+
+          </Grid>
+
+          <Grid item xs={10}>
+
+            <div className="flexbox-item SocInit-Card">
+
+              <SocInitCardFour />
+
+            </div>
+
+          </Grid>
+
+        </Grid>
 
 
       </div>

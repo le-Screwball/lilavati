@@ -1,6 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import Calender from '../Assets/Calender.svg';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -10,14 +12,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function UpdatesButton() {
+export default function PrioLinkAppointments() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Button variant="contained">
 
-        Update Text
+        <img src={Calender} className="Calender-logo Priority-Logos" alt="calender" />
+        Appointments
 
       </Button>
     </div>

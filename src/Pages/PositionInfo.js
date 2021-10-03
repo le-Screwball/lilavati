@@ -1,20 +1,31 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 import PositionInfoCard from '../Components/PositionInfoCard';
-// import DatePickers from '../Components/DateTimePicker';
+import Grid from '@material-ui/core/Grid';
 
 export default function PositionInfo() {
   return (
     <React.Fragment>
       <div className="flexbox-container Careers-Page">
 
-        <div className="flexbox-item Page-Header">
-          <h2>Careers at Lilavati</h2>
-        </div>
+        <Grid container spacing={3} justifyContent="center">
 
-        <div className="flexbox-item Pos-Info-Card">
-          <PositionInfoCard />
-        </div>
+          <Grid item xs={10}>
+
+            <div className="flexbox-item Page-Header">
+              <h2>Careers at Lilavati</h2>
+            </div>
+
+          </Grid>
+
+          <Grid item xs={10}>
+
+            <div className="flexbox-item Pos-Info-Card">
+              <PositionInfoCard />
+            </div>
+
+          </Grid>
+
+        </Grid>
 
       </div>
     </React.Fragment>
