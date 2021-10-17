@@ -6,20 +6,55 @@ import { Link, Router } from "react-router-dom";
 import logo from './../Assets/LHLogo.svg';
 import search from './../Assets/search.svg';
 import MenuDrawer from './MenuDrawer';
+import { makeStyles } from '@material-ui/core/styles';
 
+const useStyles = makeStyles({
+  AppBar: {
+    padding: '1%',
+    background: '#ffffff',
+    boxShadow: '0px 0px 0px 0px',
+  },
+
+  ToolBar: {
+    display: "flex",
+    justifyContent: 'space-between',
+  },
+
+  SearchLogo: {
+
+  },
+
+  AppLogo: {
+    // height: 'auto',
+    width: '75%',
+    maxHeight: '100px',
+  },
+
+  AppLogoLink: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+
+  AppLogoBoundary: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+});
 
 export default function GlobalAppBar() {
+  const classes = useStyles();
+
   return (
-    <div className="root">
-      <AppBar position="static">
-        <Toolbar>
+    <div>
+      <AppBar className={classes.AppBar} position="static">
+        <Toolbar className={classes.ToolBar}>
 
-          <img src={search} className="Search-logo" alt="search" />
+          <img src={search} className={classes.SearchLogo} alt="search" />
 
-          <Link to={process.env.PUBLIC_URL + '/home'}>
+          <Link className={classes.AppLogoLink} to={process.env.PUBLIC_URL + '/home'}>
 
-            <IconButton>
-              <img src={logo} className="App-logo" alt="logo" />
+            <IconButton className={classes.AppLogoBoundary}>
+              <img src={logo} className={classes.AppLogo} alt="logo" />
             </IconButton>
 
           </Link>

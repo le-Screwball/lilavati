@@ -16,224 +16,217 @@ import TestimonialCardTwo from '../Components/TestimonialCardTwo';
 import TestimonialCardThree from '../Components/TestimonialCardThree';
 import TestimonialCardFour from '../Components/TestimonialCardFour';
 import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+import { makeStyles } from '@material-ui/core/styles';
 
+const useStyles = makeStyles({
+  root: {
+    background: "#F1FFFB",
+    height: "100%",
+  },
+
+  masterBox: {
+    justifyContent: 'center',
+  },
+
+  gridContainer: {
+    // display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  sectionHeader: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
+
+  updatesBox: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+
+  testimonialBox: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+
+  testimonial: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    margin: '10% 0%',
+  },
+});
 
 export default function Home() {
+  const classes = useStyles();
+
   return (
     <React.Fragment>
 
-      <div className="flexbox-container">
+      <Box className={classes.masterBox}>
 
-        <Grid container spacing={3} justifyContent="center" >
+        <Grid container spacing={3} className={classes.gridContainer} >
 
+          <Grid item xs={10} className={classes.sectionHeader}>
 
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Page-Header">
+            <Box>
 
               <h2>Priority Links</h2>
 
-            </div>
+            </Box>
 
           </Grid>
 
           <Grid item xs={10}>
 
-            <div className="flexbox-item Option-Card">
+            <Box className="flexbox-item Option-Card">
 
               <OptionCard />
 
-            </div>
+            </Box>
 
           </Grid>
 
           <Grid item xs={10}>
 
-            <div className="flexbox-item">
+            <Box className="flexbox-item">
 
               <BannersCarousel />
 
-            </div>
+            </Box>
 
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={10} className={classes.sectionHeader}>
 
-            <div className="flexbox-item Page-Header">
+            <Box>
 
               <h2>Updates</h2>
 
-            </div>
+            </Box>
 
           </Grid>
 
           <Grid item xs={10}>
 
-            <div className="flexbox-item Updates-Button">
+            <Box className={classes.updatesBox}>
 
-              <UpdatesButtonOne />
+              <Box>
+                <UpdatesButtonOne />
+              </Box>
+              <Box>
+                <UpdatesButtonTwo />
+              </Box>
+              <Box>
+                <UpdatesButtonThree />
+              </Box>
+              <Box>
+                <UpdatesButtonFour />
+              </Box>
+              <Box>
+                <UpdatesButtonFive />
+              </Box>
+              <Box>
+                <UpdatesButtonSix />
+              </Box>
 
-            </div>
-
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Updates-Button">
-
-              <UpdatesButtonTwo />
-
-            </div>
-
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Updates-Button">
-
-              <UpdatesButtonThree />
-
-            </div>
+            </Box>
 
           </Grid>
 
-          <Grid item xs={10}>
 
-            <div className="flexbox-item Updates-Button">
+          <Grid item xs={10} className={classes.sectionHeader}>
 
-              <UpdatesButtonFour />
-
-            </div>
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Updates-Button">
-
-              <UpdatesButtonFive />
-
-            </div>
-
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Updates-Button">
-
-              <UpdatesButtonSix />
-
-            </div>
-
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Page-Header">
+            <Box>
 
               <h2>Testimonials</h2>
 
-            </div>
+            </Box>
 
           </Grid>
 
           <Grid item xs={10}>
 
-            <div className="flexbox-item Testimonial-Card">
+            <Box className={classes.testimonialBox}>
 
-              <TestimonialCardOne />
+              <Box className={classes.testimonial}>
+                <TestimonialCardOne />
+              </Box>
+              <Box className={classes.testimonial}>
+                <TestimonialCardTwo />
+              </Box>
+              <Box className={classes.testimonial}>
+                <TestimonialCardThree />
+              </Box>
+              <Box className={classes.testimonial}>
+                <TestimonialCardFour />
+              </Box >
 
-            </div>
-
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Testimonial-Card">
-
-              <TestimonialCardTwo />
-
-            </div>
-
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Testimonial-Card">
-
-              <TestimonialCardThree />
-
-            </div>
+            </Box>
 
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={10} className={classes.sectionHeader}>
 
-            <div className="flexbox-item Testimonial-Card">
-
-              <TestimonialCardFour />
-
-            </div>
-
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Page-Header">
+            <Box>
 
               <h2>Social Initiatives</h2>
 
-            </div>
+            </Box>
 
           </Grid>
 
           <Grid item xs={10}>
 
-            <div className="flexbox-item SocInit-Card">
+            <Box className="flexbox-item SocInit-Card">
 
               <SocInitCardOne />
 
-            </div>
+            </Box>
 
           </Grid>
 
           <Grid item xs={10}>
 
-            <div className="flexbox-item SocInit-Card">
+            <Box className="flexbox-item SocInit-Card">
 
               <SocInitCardTwo />
 
-            </div>
+            </Box>
 
           </Grid>
 
           <Grid item xs={10}>
 
-            <div className="flexbox-item SocInit-Card">
+            <Box className="flexbox-item SocInit-Card">
 
               <SocInitCardThree />
 
-            </div>
+            </Box>
 
           </Grid>
 
           <Grid item xs={10}>
 
-            <div className="flexbox-item SocInit-Card">
+            <Box className="flexbox-item SocInit-Card">
 
               <SocInitCardFour />
 
-            </div>
+            </Box>
 
           </Grid>
 
         </Grid>
 
 
-      </div>
+      </Box>
 
 
 
 
-    </React.Fragment>
+    </React.Fragment >
   );
 }

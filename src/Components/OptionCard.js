@@ -6,60 +6,63 @@ import PrioLinkAmbulance from './PrioLinkAmbulance';
 import PrioLinkAppointments from './PrioLinkAppointments';
 import PrioLinkHealthCare from './PrioLinkHealthCare';
 import PrioLinkFinances from './PrioLinkFinances';
+import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
+    borderRadius: '50px',
   },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
+
   title: {
     fontSize: 14,
   },
+
   pos: {
     marginBottom: 12,
+  },
+
+  cardContent: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   },
 });
 
 export default function OptionCard() {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <a href=''>
       <Card className={classes.root}>
-        <CardContent>
+        <CardContent className={classes.cardContent}>
 
-          <div className="flexbox-container">
+          <Box className={classes.cardContent}>
 
-            <div className="flexbox-item button">
+            <Box className={classes.buttonBox}>
 
               <PrioLinkAmbulance />
 
-            </div>
+            </Box>
 
-            <div className="flexbox-item button">
+            <Box className={classes.buttonBox}>
 
               <PrioLinkAppointments />
 
-            </div>
+            </Box>
 
-            <div className="flexbox-item button">
+            <Box className={classes.buttonBox}>
 
               <PrioLinkHealthCare />
 
-            </div>
+            </Box>
 
-            <div className="flexbox-item button">
+            <Box className={classes.buttonBox}>
 
               <PrioLinkFinances />
 
-            </div>
+            </Box>
 
-          </div>
+          </Box>
 
         </CardContent>
       </Card>

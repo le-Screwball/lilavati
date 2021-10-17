@@ -8,6 +8,15 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
     },
   },
+
+  button: {
+
+    minWidth: '90%',
+    padding: '7%',
+    borderRadius: '50px',
+
+  },
+
 }));
 
 export default function UpdatesButtonThree() {
@@ -15,7 +24,7 @@ export default function UpdatesButtonThree() {
 
   return (
     <div className={classes.root}>
-      <Button variant="contained">
+      <Button variant="contained" className={classes.button}>
 
         Lilavati Hospital has started administering COVISHIELD vaccination
 

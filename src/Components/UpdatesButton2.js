@@ -8,6 +8,16 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
     },
   },
+
+  button: {
+
+    minWidth: '90%',
+    padding: '7%',
+    borderRadius: '50px',
+
+  },
+
+
 }));
 
 export default function UpdatesButtonTwo() {
@@ -15,7 +25,7 @@ export default function UpdatesButtonTwo() {
 
   return (
     <div className={classes.root}>
-      <Button variant="contained">
+      <Button variant="contained" className={classes.button}>
 
         Lilavati Hospital launches state of the art Molecular Testing Laboratory
 

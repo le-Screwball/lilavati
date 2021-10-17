@@ -8,6 +8,16 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
     },
   },
+
+  button: {
+
+    minWidth: '90%',
+    padding: '7%',
+    borderRadius: '50px',
+
+  },
+
+
 }));
 
 export default function UpdatesButtonOne() {
@@ -15,7 +25,8 @@ export default function UpdatesButtonOne() {
 
   return (
     <div className={classes.root}>
-      <Button variant="contained">
+
+      <Button variant="contained" className={classes.button}>
 
         Lilavati Hospital introduces SAR-CoV-2 Antibody to Spike Protein (Quantitative) Test at Rs.1200/-
 

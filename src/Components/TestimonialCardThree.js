@@ -9,10 +9,25 @@ import Person2 from '../Assets/Person2.jpg';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: '90%',
+    padding: '5% 5%',
+    borderRadius: '50px',
   },
+
+  title: {
+    margin: '5% 5%',
+  },
+
   media: {
-    height: 140,
+    height: 125,
+    display: 'flex',
+    justifyContent: 'center',
+    padding: '5% 5%',
+  },
+
+  Content: {
+    margin: '5% 5%',
+    alignContent: 'center',
   },
 });
 
@@ -23,14 +38,16 @@ export default function TestimonialCardThree() {
     <Card className={classes.root}>
       <CardHeader
         title="Tanisha Mehra"
+        className={classes.title}
       />
       <CardMedia
         className={classes.media}
-        image={Person2}
         title="Contemplative Reptile"
-      />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
+      >
+        <img src={Person2} />
+      </CardMedia>
+      <CardContent className={classes.Content}>
+        <Typography align="center" variant="body2" color="textSecondary" component="p">
 
           Clean, pleasant atmosphere, patient friendly staff. I celebrated Diwali Festival here. I feel like home. The best hospital in Mumbai !!!
 

@@ -17,14 +17,33 @@ import twitter from './Assets/twitter.svg';
 import AppFooter from './Components/Footer.js';
 import HotlinesFAB from './Components/HotlinesFAB';
 import HotlinesPopup from './Components/HotlinesPopup';
+import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
+import { makeStyles } from '@material-ui/core/styles';
 
+const useStyles = makeStyles({
+  App: {
+    backgroundColor: "#F1FFFB",
+    // backgroundColor: "#ffffff",
+    height: "100%",
+  },
+
+  FAB: {
+    position: "fixed",
+    top: '80%',
+    right: '5%',
+  },
+
+});
 
 function App() {
+  const classes = useStyles();
+
   return (
-    <div className="App">
+    <Box className={classes.App}>
       {/* Header (Navigation Bar) */}
-      <header className="App-header">
-        {/* <LandingAppBar/> */}
+      <header className={classes.AppHeader}>
+        {/* <LandingAppBar /> */}
         <GlobalAppBar />
       </header>
 
@@ -40,12 +59,16 @@ function App() {
         <Route path={process.env.PUBLIC_URL + '/success'}  > <Success /> </Route>
       </Switch>
 
-      <HotlinesPopup />
+      <Box>
+        <AppFooter />
+      </Box>
 
-      <AppFooter />
+      <Box className={classes.FAB}>
+        <HotlinesPopup />
+      </Box>
 
-    </div>
+    </Box>
   );
-}
+};
 
 export default App;

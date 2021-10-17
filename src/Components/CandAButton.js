@@ -17,7 +17,7 @@ export default function CandAButton() {
 
   return (
     <div className={classes.root}>
-      <Button variant="contained">
+      <Button variant="contained" >
 
         <Typography variant="body2" component="p">Careers</Typography>
 

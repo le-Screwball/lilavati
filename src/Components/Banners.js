@@ -8,6 +8,7 @@ import banner2 from '../Assets/banners1.jpg';
 import banner3 from '../Assets/banners2.jpg';
 import banner4 from '../Assets/banners3.jpg';
 
+
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const tutorialSteps = [
@@ -35,7 +36,7 @@ const tutorialSteps = [
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 400,
+    width: '90%',
     flexGrow: 1,
   },
   header: {
@@ -51,6 +52,10 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 400,
     overflow: 'hidden',
     width: '100%',
+  },
+
+  dotActive: {
+
   },
 }));
 

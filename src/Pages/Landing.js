@@ -3,41 +3,59 @@ import HotlineCard from '../Components/HotlineCard';
 import CovidResCard from '../Components/CovidResCard';
 import ContinueCard from '../Components/ContinueCard';
 import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+import Box from '@material-ui/core/Box';
+import { Container } from '@material-ui/core';
 
+const useStyles = makeStyles({
+  root: {
+    background: "#F1FFFB",
+    height: "100%",
+  },
+
+  LandingGrid: {
+    margin: '10% 2% 10% 2%',
+    maxWidth: '100vw',
+    justifyContent: 'space-around',
+  },
+});
 
 export default function Landing() {
+  const classes = useStyles();
 
   return (
     <React.Fragment>
-      <div className="flexbox-container">
-        <Grid container spacing={3} justifyContent="center" className="Landing-Grid">
+      {/* <Container className={classes.root} > */}
 
-          <Grid item xs={10}>
+      <Grid container spacing={3} justifyContent="center" className={classes.LandingGrid}>
 
-            <div className="flexbox-item Hotlines-Card">
-              <HotlineCard />
-            </div>
+        <Grid item xs={12}>
 
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item CovidRes-Card">
-              <CovidResCard />
-            </div>
-
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Continue-Card">
-              <ContinueCard />
-            </div>
-
-          </Grid>
+          <Box className="flexbox-item Hotlines-Card">
+            <HotlineCard />
+          </Box>
 
         </Grid>
-      </div>
+
+        <Grid item xs={12}>
+
+          <Box className="flexbox-item CovidRes-Card">
+            <CovidResCard />
+          </Box>
+
+        </Grid>
+
+        <Grid item xs={12}>
+
+          <Box className="flexbox-item Continue-Card">
+            <ContinueCard />
+          </Box>
+
+        </Grid>
+
+      </Grid>
+
+      {/* </Container> */}
     </React.Fragment>
   );
 }

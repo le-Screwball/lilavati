@@ -7,13 +7,18 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
+    maxWidth: '90%',
+    borderRadius: "50px",
   },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
+
+  cardContent: {
+    display: "flex",
+    justifyContent: "flex-end",
+    flexWrap: "wrap",
+    direction: "column",
+    margin: "2% 5% 2% 5%",
   },
+
   title: {
     fontSize: 14,
   },
@@ -24,19 +29,18 @@ const useStyles = makeStyles({
 
 export default function CovidResCard() {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <a href=''>
-      <Card className={classes.root}>
-        <CardContent>
 
-          <Typography variant="h5" component="h2">
-            Covid 19 Resources
-          </Typography>
+    <Card className={classes.root}>
+      <CardContent className={classes.cardContent}>
 
-        </CardContent>
-      </Card>
-    </a>
+        <Typography variant="h5" component="h2">
+          Covid 19 Resources
+        </Typography>
+
+      </CardContent>
+    </Card>
+
   );
 }

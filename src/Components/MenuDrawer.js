@@ -12,7 +12,14 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
   list: {
-    width: 250,
+    width: '100vw ',
+    margin: '10% 0% 0% 0%',
+  },
+
+  listGrid: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   },
   fullList: {
     width: 'auto',
@@ -46,39 +53,39 @@ export default function MenuDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
 
-      <Grid container spacing={3} justifyContent="center" >
+      <Grid container spacing={5} className={classes.listGrid}>
 
-        <Grid item xs={10}>
+        <Grid item xs={12}>
           <img src={menucol} className="MenuCol-logo" alt="menucol" />
         </Grid>
 
-        <Grid item xs={10}>
+        <Grid item xs={12}>
           Home
         </Grid>
 
-        <Grid item xs={10}>
+        <Grid item xs={12}>
           About us
         </Grid>
 
-        <Grid item xs={10}>
+        <Grid item xs={12}>
           Services
         </Grid>
 
-        <Grid item xs={10}>
+        <Grid item xs={12}>
           Patients
         </Grid>
 
-        <Grid item xs={10}>
+        <Grid item xs={12}>
           Visitors
         </Grid>
 
-        <Link to={process.env.PUBLIC_URL + '/CandA'}>
-          <Grid item xs={10}>
+        <Grid item xs={12}>
+          <Link to={process.env.PUBLIC_URL + '/CandA'}>
             Careers &amp; Academics
-          </Grid>
-        </Link>
+          </Link>
+        </Grid>
 
-        <Grid item xs={10}>
+        <Grid item xs={12}>
           Contact Us
         </Grid>
 

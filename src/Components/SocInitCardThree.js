@@ -9,10 +9,16 @@ import SaveGirl from '../Assets/SaveGirl.jpg';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: '100%',
+    borderRadius: '50px',
   },
+
   media: {
     height: 140,
+  },
+
+  content: {
+    margin: '5%',
   },
 });
 
@@ -26,7 +32,7 @@ export default function SocInitCardThree() {
         image={SaveGirl}
         title="Contemplative Reptile"
       />
-      <CardContent>
+      <CardContent className={classes.content}>
         <Typography gutterBottom variant="h5" component="h5">
           Save &amp; Empower Girl Child
         </Typography>

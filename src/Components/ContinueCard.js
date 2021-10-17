@@ -7,13 +7,18 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
+    maxWidth: '90%',
+    borderRadius: "50px",
   },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
+
+  cardContent: {
+    display: "flex",
+    justifyContent: "flex-end",
+    flexWrap: "wrap",
+    direction: "column",
+    margin: "2% 5% 2% 5%",
   },
+
   title: {
     fontSize: 14,
   },
@@ -29,7 +34,7 @@ export default function ContinueCard() {
   return (
     <a href='../Pages/Home.js'>
       <Card className={classes.root}>
-        <CardContent>
+        <CardContent className={classes.cardContent}>
           <Link to={process.env.PUBLIC_URL + '/home'}>
 
             <Typography variant="h5" component="h2">

@@ -9,10 +9,25 @@ import Person3 from '../Assets/Person3.jpg';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: '90%',
+    padding: '5% 5%',
+    borderRadius: '50px',
   },
+
+  title: {
+    margin: '5% 5%',
+  },
+
   media: {
-    height: 140,
+    height: 125,
+    display: 'flex',
+    justifyContent: 'center',
+    padding: '5% 5%',
+  },
+
+  Content: {
+    margin: '5% 5%',
+    alignContent: 'center',
   },
 });
 
@@ -23,14 +38,16 @@ export default function TestimonialCardTwo() {
     <Card className={classes.root}>
       <CardHeader
         title="Rajiv Singh"
+        className={classes.title}
       />
       <CardMedia
         className={classes.media}
-        image={Person3}
         title="Contemplative Reptile"
-      />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
+      >
+        <img src={Person3} />
+      </CardMedia>
+      <CardContent className={classes.Content}>
+        <Typography align="center" variant="body2" color="textSecondary" component="p">
           My dear Shri Narendra Trivediji, This is to put on record my sincere appreciation for the very efficient care rendered to me by your staff and doctors during my recent illness at the Lilavati Hospital.
         </Typography>
       </CardContent>

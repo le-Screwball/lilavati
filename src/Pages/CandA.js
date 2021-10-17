@@ -7,88 +7,110 @@ import LHMTButton from '../Components/LHMTButton';
 import NursingButton from '../Components/NursingButton';
 import ResearchButton from '../Components/ResearchButton';
 import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+import { makeStyles } from '@material-ui/core';
+
+const useStyles = makeStyles({
+  root: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '10% 0%',
+  },
+
+
+
+  masterGrid: {
+    display: 'grid',
+    justifyContent: 'center',
+  },
+
+  gridItems: {
+    display: 'grid',
+    justifyContent: 'center',
+  },
+
+});
 
 export default function CandA() {
+  const classes = useStyles();
+
   return (
     <React.Fragment>
 
-      <div className="flexbox-container">
+      <Box className={classes.root}>
 
-        <Grid container spacing={3} justifyContent="center">
+        <Box className={classes.pageHeader}>
 
-          <Grid item xs={10}>
+          <h2>Career &amp; Academics</h2>
 
-            <div className="flexbox-item Page-Header">
+        </Box>
 
-              <h2>Career &amp; Academics</h2>
+        <Grid container spacing={3} className={classes.masterGrid}>
 
-            </div>
+          <Grid item xs={12} className={classes.gridItems}>
 
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item CandA-Button">
+            <Box >
 
               <Link to={process.env.PUBLIC_URL + '/careers'}><CandAButton /></Link>
 
-            </div>
+            </Box>
 
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12} className={classes.gridItems}>
 
-            <div className="flexbox-item CandA-Button">
+            <Box >
 
               <CMEButton />
 
-            </div>
+            </Box>
 
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12} className={classes.gridItems}>
 
-            <div className="flexbox-item CandA-Button">
+            <Box >
 
               <DNBButton />
 
-            </div>
+            </Box>
 
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12} className={classes.gridItems}>
 
-            <div className="flexbox-item CandA-Button">
+            <Box >
 
               <LHMTButton />
 
-            </div>
+            </Box>
 
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12} className={classes.gridItems}>
 
-            <div className="flexbox-item CandA-Button">
+            <Box >
 
               <NursingButton />
 
-            </div>
+            </Box>
 
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12} className={classes.gridItems}>
 
-            <div className="flexbox-item CandA-Button">
+            <Box >
 
               <ResearchButton />
 
-            </div>
+            </Box>
 
           </Grid>
 
         </Grid>
 
-      </div>
+      </Box>
 
     </React.Fragment>
   );

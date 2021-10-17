@@ -8,10 +8,16 @@ import Sewa from '../Assets/SEWA.jpg';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: '100%',
+    borderRadius: '50px',
   },
+
   media: {
     height: 140,
+  },
+
+  content: {
+    margin: '5%',
   },
 });
 
@@ -25,7 +31,7 @@ export default function SocInitCardOne() {
         image={Sewa}
         title="Contemplative Reptile"
       />
-      <CardContent>
+      <CardContent className={classes.content}>
         <Typography gutterBottom variant="h5" component="h5">
           S E W A
         </Typography>
