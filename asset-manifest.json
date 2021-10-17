@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/lilavati/static/css/main.915667ca.chunk.css",
-    "main.js": "/lilavati/static/js/main.bd74bbec.chunk.js",
-    "main.js.map": "/lilavati/static/js/main.bd74bbec.chunk.js.map",
+    "main.js": "/lilavati/static/js/main.b67e821f.chunk.js",
+    "main.js.map": "/lilavati/static/js/main.b67e821f.chunk.js.map",
     "runtime-main.js": "/lilavati/static/js/runtime-main.3f56d01a.js",
     "runtime-main.js.map": "/lilavati/static/js/runtime-main.3f56d01a.js.map",
-    "static/js/2.3babc481.chunk.js": "/lilavati/static/js/2.3babc481.chunk.js",
-    "static/js/2.3babc481.chunk.js.map": "/lilavati/static/js/2.3babc481.chunk.js.map",
+    "static/js/2.01940002.chunk.js": "/lilavati/static/js/2.01940002.chunk.js",
+    "static/js/2.01940002.chunk.js.map": "/lilavati/static/js/2.01940002.chunk.js.map",
     "index.html": "/lilavati/index.html",
     "static/css/main.915667ca.chunk.css.map": "/lilavati/static/css/main.915667ca.chunk.css.map",
-    "static/js/2.3babc481.chunk.js.LICENSE.txt": "/lilavati/static/js/2.3babc481.chunk.js.LICENSE.txt",
+    "static/js/2.01940002.chunk.js.LICENSE.txt": "/lilavati/static/js/2.01940002.chunk.js.LICENSE.txt",
     "static/media/Ambulance.c5477511.svg": "/lilavati/static/media/Ambulance.c5477511.svg",
     "static/media/Calender.4897d746.svg": "/lilavati/static/media/Calender.4897d746.svg",
     "static/media/Finances.07aa2b68.svg": "/lilavati/static/media/Finances.07aa2b68.svg",
@@ -39,8 +39,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3f56d01a.js",
-    "static/js/2.3babc481.chunk.js",
+    "static/js/2.01940002.chunk.js",
     "static/css/main.915667ca.chunk.css",
-    "static/js/main.bd74bbec.chunk.js"
+    "static/js/main.b67e821f.chunk.js"
   ]
 }
