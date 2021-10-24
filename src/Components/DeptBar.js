@@ -1,59 +1,43 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Toolbar from '@material-ui/core/Toolbar';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
 import DeptFilter from './DeptFilter';
 import RightChevron from '../Assets/RightChevron.svg';
 import { Link, Router } from "react-router-dom";
 
-const useStyles = makeStyles((theme) => ({
-  text: {
-    padding: theme.spacing(2, 2, 0),
+const useStyles = makeStyles({
+  root: {
+    minWidth: '80vw',
+    borderRadius: '50px',
+    padding: '5%',
   },
-  paper: {
-    paddingBottom: 50,
+
+  cardActions: {
+    display: 'flex',
+    justifyContent: 'space-between',
   },
-  list: {
-    marginBottom: theme.spacing(2),
-  },
-  subheader: {
-    backgroundColor: theme.palette.background.paper,
-  },
-  appBar: {
-    top: 'auto',
-    bottom: 0,
-  },
-  grow: {
-    flexGrow: 1,
-  },
-}));
+});
 
 export default function DeptBar() {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
-      <CssBaseline />
-      <AppBar position="realtive" color="primary" className={classes.appBar}>
-        <Typography className={classes.text} variant="h6" gutterBottom>
+    <Card className={classes.root}>
+      <CardContent>
+        <Typography variant='h6' gutterBottom>
           Filter By Department
         </Typography>
-        <Toolbar>
-          <form className={classes.root} noValidate autoComplete="off">
-            <DeptFilter />
-          </form>
-          <div className={classes.grow} />
-          <Link to={process.env.PUBLIC_URL + '/positioninfo'}>
-            <IconButton color="inherit">
-              <img src={RightChevron} className="Chevron CandA-Chevron" alt="rightchevron" />
-            </IconButton>
-          </Link>
-        </Toolbar>
-      </AppBar>
 
-    </React.Fragment>
+      </CardContent>
+      <CardActions className={classes.cardActions}>
+        <DeptFilter />
+        <Link to={process.env.PUBLIC_URL + '/positioninfo'}>
+          <img src={RightChevron} className="Chevron CandA-Chevron" alt="rightchevron" />
+        </Link>
+      </CardActions>
+    </Card>
   );
 }

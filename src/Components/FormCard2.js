@@ -14,52 +14,60 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
     root: {
-        minWidth: 275,
+        minWidth: '80vw',
+        borderRadius: '50px',
     },
-    bullet: {
-        display: 'inline-block',
-        margin: '0 2px',
-        transform: 'scale(0.8)',
+
+    Content: {
+        margin: '5% 5%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
     },
-    title: {
-        fontSize: 14,
+
+    masterGrid: {
+        display: 'grid',
+        alignItems: 'center',
     },
-    pos: {
-        marginBottom: 12,
+
+    gridItem: {
+        display: 'grid',
+        justifyContent: 'center',
     },
+
 });
 
 export default function FormCardTwo() {
     const classes = useStyles();
-    const bull = <span className={classes.bullet}>•</span>;
 
     return (
         <Card className={classes.root}>
-            <CardContent>
-
-                <div className="flexbox-container ">
-
-                    <Grid container spacing={3} justifyContent="center">
+            <CardContent className={classes.Content}>
 
 
 
-                        <Grid item xs={10}> <FormName /></Grid>
+                <Grid container className={classes.masterGrid} spacing={3} justifyContent="center">
 
 
 
-                        <Grid item xs={10}> <FormPhone /> </Grid> <Grid item xs={10}><FormEmail /></Grid>
+                    <Grid item className={classes.gridItem} xs={12}> <FormName /></Grid>
 
 
 
-                        <Grid item xs={10}> <FormAddressOne /></Grid>
-                        <Grid item xs={10}><FormAddressTwo /></Grid>
-                        <Grid item xs={10}><FormAddressThree /></Grid>
+                    <Grid item className={classes.gridItem} xs={12}> <FormPhone /> </Grid>
+                    <Grid item xs={12}><FormEmail /></Grid>
 
 
 
-                    </Grid>
+                    <Grid item className={classes.gridItem} xs={12}> <FormAddressOne /></Grid>
+                    <Grid item className={classes.gridItem} xs={12}><FormAddressTwo /></Grid>
+                    <Grid item className={classes.gridItem} xs={12}><FormAddressThree /></Grid>
 
-                </div>
+
+
+                </Grid>
+
+
 
             </CardContent>
         </Card>

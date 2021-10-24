@@ -9,12 +9,14 @@ import Person1 from '../Assets/Person1.jpg';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: '90%',
+    minWidth: '80vw',
     padding: '5% 5%',
     borderRadius: '50px',
   },
 
   title: {
+    display: 'flex',
+    justifyContent: 'center',
     margin: '5% 5%',
   },
 
@@ -41,12 +43,14 @@ export default function TestimonialCardOne() {
         title="Samyukta Joshi"
         className={classes.title}
       />
+
       <CardMedia
         className={classes.media}
         title="Contemplative Reptile"
       >
         <img src={Person1} />
       </CardMedia>
+
       <CardContent className={classes.Content}>
         <Typography align="center" variant="body2" color="textSecondary" component="p">
           I would like to thank the Lilavati Hospital for the excellent service provided during the medical check up I have had. I want to thank all concerned. I pray that this Hospital will continue to provide medical benefit to the poor.

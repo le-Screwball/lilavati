@@ -10,10 +10,11 @@ import { BottomNavigation, Box } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: "90%",
-    // display: "flex",
-    justifyContent: "center",
+    minWidth: "80vw",
+    display: "flex",
+    justifyContent: "right",
     borderRadius: "50px",
+    // backgroundImage: 'radial-gradient(45deg, #FFFFFF 30%, #E2FFF6 90%)',
   },
 
   cardContent: {

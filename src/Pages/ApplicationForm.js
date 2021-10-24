@@ -7,141 +7,172 @@ import FormCardTwo from '../Components/FormCard2';
 import FormCardThree from '../Components/FormCard3';
 import FormCardFour from '../Components/FormCard4';
 import Grid from '@material-ui/core/Grid';
+import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+  root: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '5% 5%',
+  },
+
+  masterGrid: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+
+  header: {
+    margin: '10% auto',
+  },
+
+  form: {
+
+  },
+
+  button: {
+    margin: '10% auto auto auto',
+  },
+
+});
 
 export default function ApplicationForm() {
+  const classes = useStyles();
+
   return (
     <React.Fragment>
-      <div className="flexbox-container">
+      <Container className={classes.root}>
 
-        <Grid container spacing={3} justifyContent="center">
+        <Grid className={classes.masterGrid} container spacing={3} justifyContent="center">
 
-          <Grid item xs={10}>
+          <Grid className={classes.gridItem, classes.header} item xs={12}>
 
-            <div className="flexbox-item Section-Header">
 
-              <Typography variant="h2" component="h2">Step 1</Typography>
+            <Typography variant="h4">Step 1</Typography>
 
-            </div>
 
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Form-Card">
-
-              <FormCardOne />
-
-            </div>
 
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid className={classes.gridItem, classes.form} item xs={12}>
 
-            <div className="flexbox-item Next Button">
+
+
+            <FormCardOne />
+
+
+
+          </Grid>
+
+          <Grid className={classes.gridItem, classes.button} item xs={12}>
+
+
+
+            <NextButton />
+
+
+          </Grid>
+
+          <Grid className={classes.gridItem, classes.header} item xs={12}>
+
+
+
+            <Typography variant="h4">Step 2</Typography>
+
+
+
+          </Grid>
+
+          <Grid className={classes.gridItem, classes.form} item xs={12}>
+
+
+
+            <FormCardTwo />
+
+
+
+          </Grid>
+
+          <Grid className={classes.gridItem, classes.button} item xs={12}>
+
+
+
+            <NextButton />
+
+
+
+          </Grid>
+
+          <Grid className={classes.gridItem, classes.header} item xs={12}>
+
+
+
+            <Typography variant="h4">Step 3</Typography>
+
+
+
+          </Grid>
+
+          <Grid className={classes.gridItem, classes.form} item xs={12}>
+
+
+
+            <FormCardThree />
+
+
+
+          </Grid>
+
+          <Grid className={classes.gridItem, classes.button} item xs={12}>
+
+
+
+            <NextButton />
+
+
+
+          </Grid>
+
+          <Grid className={classes.gridItem, classes.header} item xs={12}>
+
+
+
+            <Typography variant="h4">Step 4</Typography>
+
+
+
+          </Grid>
+
+          <Grid className={classes.gridItem, classes.form} item xs={12}>
+
+
+
+            <FormCardFour />
+
+
+
+          </Grid>
+
+          <Grid className={classes.gridItem, classes.button} item xs={12}>
+
+
+
+            <Link to={process.env.PUBLIC_URL + '/success'}>
 
               <NextButton />
 
-            </div>
+            </Link>
 
-          </Grid>
 
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Section-Header">
-
-              <Typography variant="h2" component="h2">Step 2</Typography>
-
-            </div>
-
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Form-Card">
-
-              <FormCardTwo />
-
-            </div>
-
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Next Button">
-
-              <NextButton />
-
-            </div>
-
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Section-Header">
-
-              <Typography variant="h2" component="h2">Step 3</Typography>
-
-            </div>
-
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Form-Card">
-
-              <FormCardThree />
-
-            </div>
-
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Next Button">
-
-              <NextButton />
-
-            </div>
-
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Section-Header">
-
-              <Typography variant="h2" component="h2">Step 4</Typography>
-
-            </div>
-
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Form-Card">
-
-              <FormCardFour />
-
-            </div>
-
-          </Grid>
-
-          <Grid item xs={10}>
-
-            <div className="flexbox-item Next Button">
-
-              <Link to={process.env.PUBLIC_URL + '/success'}>
-
-                <NextButton />
-
-              </Link>
-
-            </div>
 
           </Grid>
 
         </Grid>
 
-      </div>
+      </Container>
     </React.Fragment>
   );
 }

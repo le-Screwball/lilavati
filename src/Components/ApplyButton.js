@@ -10,6 +10,15 @@ const useStyles = makeStyles((theme) => ({
             margin: theme.spacing(1),
         },
     },
+
+    Button: {
+        minWidth: '70vw',
+        padding: '5% 5% 5% 5%',
+        borderRadius: '50px',
+        display: 'flex',
+        justifyContent: 'center',
+    },
+
 }));
 
 export default function ApplyButton() {
@@ -17,7 +26,7 @@ export default function ApplyButton() {
 
     return (
         <div className={classes.root}>
-            <Button variant="contained">
+            <Button className={classes.Button} variant="contained">
 
                 <Typography variant="body2" component="p">Apply</Typography>
 

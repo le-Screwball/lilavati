@@ -10,11 +10,13 @@ const useStyles = makeStyles((theme) => ({
   },
 
   button: {
-
-    minWidth: '90%',
-    padding: '7%',
+    minWidth: '80vw',
+    padding: '5% 5% 5% 5%',
     borderRadius: '50px',
-
+    display: 'flex',
+    justifyContent: 'center',
+    background: '#ffffff',
+    textTransform: 'none',
   },
 
 

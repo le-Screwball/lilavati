@@ -18,6 +18,8 @@ import TestimonialCardFour from '../Components/TestimonialCardFour';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles({
   root: {
@@ -27,6 +29,7 @@ const useStyles = makeStyles({
 
   masterBox: {
     justifyContent: 'center',
+    padding: '5% 0%',
   },
 
   gridContainer: {
@@ -38,6 +41,7 @@ const useStyles = makeStyles({
   sectionHeader: {
     display: 'flex',
     justifyContent: 'center',
+    margin: '10% 0%',
   },
 
   updatesBox: {
@@ -66,21 +70,21 @@ export default function Home() {
   return (
     <React.Fragment>
 
-      <Box className={classes.masterBox}>
+      <Container className={classes.masterBox}>
 
         <Grid container spacing={3} className={classes.gridContainer} >
 
-          <Grid item xs={10} className={classes.sectionHeader}>
+          <Grid item xs={12} className={classes.sectionHeader}>
 
             <Box>
 
-              <h2>Priority Links</h2>
+              <Typography variant='h5'>Priority Links</Typography>
 
             </Box>
 
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12}>
 
             <Box className="flexbox-item Option-Card">
 
@@ -90,7 +94,7 @@ export default function Home() {
 
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12}>
 
             <Box className="flexbox-item">
 
@@ -100,17 +104,17 @@ export default function Home() {
 
           </Grid>
 
-          <Grid item xs={10} className={classes.sectionHeader}>
+          <Grid item xs={12} className={classes.sectionHeader}>
 
             <Box>
 
-              <h2>Updates</h2>
+              <Typography variant='h5'>Updates</Typography>
 
             </Box>
 
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12}>
 
             <Box className={classes.updatesBox}>
 
@@ -138,17 +142,17 @@ export default function Home() {
           </Grid>
 
 
-          <Grid item xs={10} className={classes.sectionHeader}>
+          <Grid item xs={12} className={classes.sectionHeader}>
 
             <Box>
 
-              <h2>Testimonials</h2>
+              <Typography variant='h5'>Testimonials</Typography>
 
             </Box>
 
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12}>
 
             <Box className={classes.testimonialBox}>
 
@@ -169,17 +173,17 @@ export default function Home() {
 
           </Grid>
 
-          <Grid item xs={10} className={classes.sectionHeader}>
+          <Grid item xs={12} className={classes.sectionHeader}>
 
             <Box>
 
-              <h2>Social Initiatives</h2>
+              <Typography variant='h5'>Social Initiatives</Typography>
 
             </Box>
 
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12}>
 
             <Box className="flexbox-item SocInit-Card">
 
@@ -189,7 +193,7 @@ export default function Home() {
 
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12}>
 
             <Box className="flexbox-item SocInit-Card">
 
@@ -199,7 +203,7 @@ export default function Home() {
 
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12}>
 
             <Box className="flexbox-item SocInit-Card">
 
@@ -209,7 +213,7 @@ export default function Home() {
 
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12}>
 
             <Box className="flexbox-item SocInit-Card">
 
@@ -222,7 +226,7 @@ export default function Home() {
         </Grid>
 
 
-      </Box>
+      </Container>
 
 
 

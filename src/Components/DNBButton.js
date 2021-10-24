@@ -10,6 +10,15 @@ const useStyles = makeStyles((theme) => ({
             margin: theme.spacing(1),
         },
     },
+
+    Button: {
+        minWidth: '80vw',
+        padding: '5% 5% 5% 10%',
+        borderRadius: '50px',
+        display: 'flex',
+        justifyContent: 'space-between',
+    },
+
 }));
 
 export default function DNBButton() {
@@ -17,7 +26,7 @@ export default function DNBButton() {
 
     return (
         <div className={classes.root}>
-            <Button variant="contained">
+            <Button className={classes.Button} variant="contained">
 
                 <Typography variant="body2" component="p">DNB - Diplomate of National Board</Typography>
 

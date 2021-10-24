@@ -9,6 +9,8 @@ import ResearchButton from '../Components/ResearchButton';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import { makeStyles } from '@material-ui/core';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles({
   root: {
@@ -19,10 +21,10 @@ const useStyles = makeStyles({
   },
 
 
-
   masterGrid: {
     display: 'grid',
     justifyContent: 'center',
+    margin: '5% 0% 0% 0%',
   },
 
   gridItems: {
@@ -38,11 +40,11 @@ export default function CandA() {
   return (
     <React.Fragment>
 
-      <Box className={classes.root}>
+      <Container className={classes.root}>
 
         <Box className={classes.pageHeader}>
 
-          <h2>Career &amp; Academics</h2>
+          <Typography variant='h4'>Career &amp; Academics</Typography>
 
         </Box>
 
@@ -110,7 +112,7 @@ export default function CandA() {
 
         </Grid>
 
-      </Box>
+      </Container>
 
     </React.Fragment>
   );

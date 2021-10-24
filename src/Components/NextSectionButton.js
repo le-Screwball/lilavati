@@ -9,6 +9,14 @@ const useStyles = makeStyles((theme) => ({
             margin: theme.spacing(1),
         },
     },
+
+    Button: {
+        minWidth: '80vw',
+        padding: '5% 5% 5% 5%',
+        borderRadius: '50px',
+        display: 'flex',
+        justifyContent: 'center',
+    },
 }));
 
 export default function NextButton() {
@@ -17,9 +25,9 @@ export default function NextButton() {
     return (
         <div className={classes.root}>
 
-            <Button variant="contained">
+            <Button className={classes.Button} variant="contained">
 
-                <Typography variant="body2" component="p">Next</Typography>
+                <Typography variant="body2">Next</Typography>
 
             </Button>
         </div>

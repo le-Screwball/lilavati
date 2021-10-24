@@ -6,79 +6,85 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import ApplyButton from './ApplyButton';
 import { Link, Router } from "react-router-dom";
+import Box from '@material-ui/core/Box';
+
 
 const useStyles = makeStyles({
     root: {
-        minWidth: 275,
+        width: '80vw',
+        borderRadius: '50px',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        // padding: '5% 5%',
     },
-    bullet: {
-        display: 'inline-block',
-        margin: '0 2px',
-        transform: 'scale(0.8)',
+
+    Content: {
+        margin: '5% 5%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
     },
-    title: {
-        fontSize: 14,
+
+    textSection: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        margin: '3% 0%',
     },
-    pos: {
-        marginBottom: 12,
-    },
+
 });
 
 export default function PositionInfoCard() {
     const classes = useStyles();
-    const bull = <span className={classes.bullet}>•</span>;
 
     return (
         <Card className={classes.root}>
-            <CardContent>
+            <CardContent className={classes.Content}>
 
-                <div className="flexbox-container">
+                <Box className={classes.textSection}>
 
-                    <div className="flexbox-item Position-Info-Text">
+                    <Typography variant="h6" component="p">Department</Typography>
+                    <Typography variant="body2" component="p">Medical</Typography>
 
-                        <Typography variant="body1" component="p">Department</Typography>
-                        <Typography variant="body2" component="p">Medical</Typography>
+                </Box>
 
-                    </div>
+                <Box className={classes.textSection}>
 
-                    <div className="flexbox-item button">
+                    <Typography variant="h6" component="p">Position</Typography>
+                    <Typography variant="body2" component="p">Junior Consultant</Typography>
+                    <Typography variant="body2" component="p">Casualty &amp; Emergency Medicine</Typography>
 
-                        <Typography variant="body1" component="p">Position</Typography>
-                        <Typography variant="body2" component="p">Junior Consultant</Typography>
-                        <Typography variant="body2" component="p">Casualty &amp; Emergency Medicine</Typography>
+                </Box>
 
-                    </div>
+                <Box className={classes.textSection}>
 
-                    <div className="flexbox-item button">
+                    <Typography variant="h6" component="p">Minimum Qualifications</Typography>
+                    <Typography variant="body2" component="p">MD/DNB(Emergency Medicine)</Typography>
 
-                        <Typography variant="body1" component="p">Minimum Qualifications</Typography>
-                        <Typography variant="body2" component="p">MD/DNB(Emergency Medicine)</Typography>
+                </Box>
 
-                    </div>
+                <Box className={classes.textSection}>
 
-                    <div className="flexbox-item button">
+                    <Typography variant="h6" component="p">Preferred Job Experience</Typography>
+                    <Typography variant="body2" component="p">1-2 Years &amp; above</Typography>
 
-                        <Typography variant="body1" component="p">Preferred Job Experience</Typography>
-                        <Typography variant="body2" component="p">1-2 Years &amp; above</Typography>
+                </Box>
 
-                    </div>
+                <Box className={classes.textSection}>
 
-                    <div className="flexbox-item button">
+                    <Typography variant="h6" component="p">Vacancy</Typography>
+                    <Typography variant="h2" component="p">4</Typography>
 
-                        <Typography variant="body1" component="p">Vacancy</Typography>
-                        <Typography variant="h2" component="p">4</Typography>
+                </Box>
 
-                    </div>
+                <Box className={classes.textSection}>
+                    <Link to={process.env.PUBLIC_URL + '/applicationform'}>
 
-                    <div className="flexbox-item button">
-                        <Link to={process.env.PUBLIC_URL + '/applicationform'}>
+                        <ApplyButton />
 
-                            <ApplyButton />
-
-                        </Link>
-                    </div>
-
-                </div>
+                    </Link>
+                </Box>
 
             </CardContent>
         </Card>

@@ -7,7 +7,7 @@ import NativeSelect from '@material-ui/core/NativeSelect';
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
-    minWidth: 120,
+    width: '150%',
   },
   selectEmpty: {
     marginTop: theme.spacing(2),
@@ -17,8 +17,6 @@ const useStyles = makeStyles((theme) => ({
 export default function DeptFilter() {
   const classes = useStyles();
   const [state, setState] = React.useState({
-    age: '',
-    name: 'hai',
   });
 
   const handleChange = (event) => {
@@ -43,9 +41,9 @@ export default function DeptFilter() {
           }}
         >
           <option aria-label="None" value="" />
-          <option value={1}>Medical</option>
-          <option value={2}>Non-Medical</option>
-          <option value={3}>Para-Medical</option>
+          <option value={10}>Medical</option>
+          <option value={20}>Non-Medical</option>
+          <option value={30}>Para-Medical</option>
         </NativeSelect>
       </FormControl>
 

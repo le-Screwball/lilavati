@@ -1,74 +1,82 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles({
     root: {
-        minWidth: 275,
+        minWidth: '80vw',
+        borderRadius: '50px',
+
     },
-    bullet: {
-        display: 'inline-block',
-        margin: '0 2px',
-        transform: 'scale(0.8)',
+
+    Content: {
+        margin: '5% 5%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
     },
-    title: {
-        fontSize: 14,
+
+    masterGrid: {
+        display: 'grid',
+        alignItems: 'center',
     },
-    pos: {
-        marginBottom: 12,
+
+    gridItem: {
+        display: 'grid',
+        justifyContent: 'center',
     },
+
 });
 
 export default function FormCardOne() {
     const classes = useStyles();
-    const bull = <span className={classes.bullet}>•</span>;
 
     return (
         <Card className={classes.root}>
-            <CardContent>
+            <CardContent className={classes.Content}>
 
-                <div className="flexbox-container">
+                <Grid container className={classes.masterGrid} spacing={3} justifyContent="center">
 
-                    <Grid container spacing={3} justifyContent="center">
+                    <Grid item className={classes.gridItem} xs={12}>
 
-                        <Grid item xs={10}>
 
-                            <div className="flexbox-item Position-Info-Text">
+                        <Typography align='center' variant="body1" gutterBottom>
+                            You are applying to work in
+                            The <Typography align='center' variant="h4" >Medical</Typography>Department
+                        </Typography>
 
-                                <Typography variant="body1" gutterBottom>
-                                    You are applying to work in
-                                    <br />
-                                    The <Typography variant="h4" >Medical</Typography>Department
-                                </Typography>
 
-                            </div>
+                    </Grid>
 
-                        </Grid>
+                    <Grid item className={classes.gridItem} xs={12}>
 
-                        <Grid item xs={10}>
 
-                            <div className="flexbox-item Position-Info-Text">
 
-                                <Typography variant="body1" gutterBottom>
-                                    As the
-                                    <br />
-                                    <Typography variant="h5" >Junior Consultant</Typography>
-                                    <br />
-                                    Of <Typography variant="h5" >Casualty &amp; Emergency Medecine</Typography>
-                                </Typography>
+                        <Typography align='center' variant="body1" >
+                            As the
+                        </Typography>
+                        <br />
+                        <Typography align='center' variant="h5" gutterBottom>Junior Consultant</Typography>
 
-                            </div>
+                    </Grid>
 
-                        </Grid>
+                    <Grid item className={classes.gridItem} xs={12}>
+
+                        <Typography align='center' variant="body1" >
+                            Of
+                        </Typography>
+                        <Typography align='center' variant="h5" >Casualty &amp; Emergency Medecine</Typography>
+
 
                     </Grid>
 
 
-                </div>
+
+                </Grid>
 
             </CardContent>
         </Card>

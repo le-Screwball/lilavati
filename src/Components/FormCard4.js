@@ -8,18 +8,15 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
     root: {
-        minWidth: 275,
+        minWidth: '80vw',
+        borderRadius: '50px',
     },
-    bullet: {
-        display: 'inline-block',
-        margin: '0 2px',
-        transform: 'scale(0.8)',
-    },
-    title: {
-        fontSize: 14,
-    },
-    pos: {
-        marginBottom: 12,
+
+    Content: {
+        margin: '5% 5%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
     },
 });
 
@@ -29,31 +26,27 @@ export default function FormCardFour() {
 
     return (
         <Card className={classes.root}>
-            <CardContent>
+            <CardContent className={classes.Content}>
 
-                <div className="flexbox-container">
+                <Grid container spacing={3} justifyContent="center">
 
-                    <Grid container spacing={3} justifyContent="center">
+                    <Grid item xs={10}>
 
-                        <Grid item xs={10}>
-
-                            <Typography variant="body1" gutterBottom>
-                                I declare that the information given is true and correct and I am fully aware that it will form the basis for shortlisting for interview.
-                            </Typography>
-
-                        </Grid>
-
-                        <Grid item xs={10}>
-
-                            <Typography variant="body1" gutterBottom>
-                                And anytime if it is found incorrect I will qualify for "disqualification".
-                            </Typography>
-
-                        </Grid>
+                        <Typography variant="body1" gutterBottom>
+                            I declare that the information given is true and correct and I am fully aware that it will form the basis for shortlisting for interview.
+                        </Typography>
 
                     </Grid>
 
-                </div>
+                    <Grid item xs={10}>
+
+                        <Typography variant="body1" gutterBottom>
+                            And anytime if it is found incorrect I will qualify for "disqualification".
+                        </Typography>
+
+                    </Grid>
+
+                </Grid>
 
             </CardContent>
         </Card>

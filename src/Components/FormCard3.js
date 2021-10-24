@@ -12,79 +12,89 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
     root: {
-        minWidth: 275,
+        minWidth: '80vw',
+        borderRadius: '50px',
     },
-    bullet: {
-        display: 'inline-block',
-        margin: '0 2px',
-        transform: 'scale(0.8)',
+
+    Content: {
+        margin: '5% 5%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
     },
-    title: {
-        fontSize: 14,
+
+    masterGrid: {
+        // display: 'grid',
+        // alignItems: 'center',
     },
-    pos: {
-        marginBottom: 12,
+
+    gridItem: {
+        display: 'grid',
+        justifyContent: 'space-between',
     },
+
+    radioButton: {
+        display: 'grid',
+        justifyContent: 'right',
+    },
+
 });
 
 export default function FormCardThree() {
     const classes = useStyles();
-    const bull = <span className={classes.bullet}>•</span>;
+
 
     return (
         <Card className={classes.root}>
-            <CardContent>
+            <CardContent className={classes.Content}>
 
-                <div className="flexbox-container ">
-                    <Grid container spacing={3} justifyContent="center">
+                <Grid container className={classes.masterGrid} spacing={3} justifyContent="center">
 
-                        <Grid item xs={10}>
+                    <Grid item className={classes.gridItem} xs={10}>
 
-                            <FormQual />
-
-                        </Grid>
-
-                        <Grid item xs={10}>
-
-                            <FormRelExp />
-                        </Grid>
-
-                        <Grid item xs={10}>
-
-                            <FormTotalExp />
-                        </Grid>
-
-
-                        <Grid item xs={3}>
-
-                            <Typography variant="body1">Hostel Accommodation </Typography>
-
-                        </Grid>
-                        <Grid item xs={7} ><FormYNRadio /></Grid>
-
-                        <Grid item xs={3}>
-
-                            <Typography variant="body1">MMC/MNC Registration </Typography>
-
-                        </Grid>
-
-                        <Grid item xs={7}><FormYNRadio /> </Grid>
-
-
-
-
-                        <Grid item xs={7}>
-
-                            <Typography variant="body1">Upload Resume </Typography>
-
-                        </Grid>
-
-                        <Grid item xs={3}><UploadButton /></Grid>
-
+                        <FormQual />
 
                     </Grid>
 
-                </div>
+                    <Grid item className={classes.gridItem} xs={10}>
+
+                        <FormRelExp />
+                    </Grid>
+
+                    <Grid item className={classes.gridItem} xs={10}>
+
+                        <FormTotalExp />
+                    </Grid>
+
+
+                    <Grid item className={classes.gridItem, classes.hostelLabel} xs={3}>
+
+                        <Typography variant="body1">Hostel Accommodation </Typography>
+
+                    </Grid>
+                    <Grid item className={classes.gridItem, classes.radioButton} xs={7} ><FormYNRadio /></Grid>
+
+                    <Grid item className={classes.gridItem} xs={3}>
+
+                        <Typography variant="body1">MMC/MNC Registration </Typography>
+
+                    </Grid>
+
+                    <Grid item className={classes.gridItem, classes.radioButton} xs={7}><FormYNRadio /> </Grid>
+
+
+
+
+                    <Grid item className={classes.gridItem} xs={7}>
+
+                        <Typography variant="body1">Upload Resume </Typography>
+
+                    </Grid>
+
+                    <Grid item className={classes.gridItem} xs={3}><UploadButton /></Grid>
+
+
+                </Grid>
 
             </CardContent >
         </Card >
